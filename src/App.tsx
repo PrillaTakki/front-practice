@@ -39,6 +39,9 @@ function App() {
 
   function reset() {
     setClicks(0);
+    fetch('http://localhost:8000/clicks', {
+      method: 'DELETE',
+    });
   }
 
   return (
